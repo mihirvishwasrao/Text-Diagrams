@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Text Diagrams</title>
+	<style>
+		body {
+			font-family: futura;
+			background-color: #dfdfdf;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+
+		section {
+			max-width: 1000px;
+			margin: 20px auto;
+			/* Add margin for spacing */
+			background-color: rgb(255, 255, 255);
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 25px;
+			text-align: center;
+		}
+
+		h2 {
+			color: #333;
+		}
+
+		p {
+			color: #666;
+			line-height: 2;
+			text-align: left;
+		}
+
+		.thumbnails {
+			display: flex;
+			flex-wrap: wrap;
+			/* Enable wrapping for smaller screens */
+			justify-content: space-around;
+			/* Space images evenly */
+		}
+
+		.thumbnail {
+			flex: 0 0 30%;
+			/* Set a fixed width for each image */
+			margin: 10px;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+		}
+
+		button {
+			background-color: #b5b5b5;
+			color: #fff;
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			margin-top: 20px;
+		}
+
+		button:hover {
+			background-color: #cccccc;
+		}
+
+		a:hover {
+			border-bottom-color: transparent;
+			color: #11b7d8;
+		}
+
+		a {
+			border-bottom-color: transparent;
+			color: #666;
+		}
+
+		.fancy-button {
+			display: inline-block;
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			cursor: pointer;
+			border: 2px solid #3498db;
+			border-radius: 25px;
+			color: #ffffff;
+			background-color: #3498db;
+			transition: background-color 0.3s, color 0.3s;
+		}
+
+		.fancy-button:hover {
+			background-color: #2980b9;
+			color: #ffffff;
+		}
+
+		body {
+      margin: 0;
+      font-family: futura;
+    }
+
+    /* Style the footer */
+    #footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Style the copyright text */
+    .copyright {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .copyright li {
+      font-size: 14px;
+    }
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1>Theoretical models of Information Visualization</h1>
+	</header>
+
+	<section>
+
+		<h2>Text diagrams</h2>
+
+		<p>Text diagrams provide a versatile and efficient way to convey information, offering simplicity,
+			accessibility, and compatibility across various platforms and industries. Their importance lies in their
+			ability to communicate complex concepts in a clear and universally accessible manner.</p>
+		<p>In this project, I have conducted an extensive literature review to pinpoint theoretical models concerning
+			information visualization and delivery systems. These diagrams show the key concepts, frameworks, and
+			explains the relationships that exist between them. It also uncovers the conceptual framework and draws
+			inspiration from the theories that were uncovered in the literature. I have also assessed the
+			efficacy of each model in terms of information delivery and its impact on user comprehension. <a
+				href="ALL PDFs.pdf" target="_blank">Click Here to view all the articles.</p>
+		<div class="thumbnails">
+			<article class="thumbnail">
+				<a href="images/Theory of Signs.jpeg" target="_blank">
+					<img src="images/tb1updated.jpg" alt="" />
+				</a>
+			</article>
+
+			<article class="thumbnail">
+				<a href="images/Seals of Leisure.jpeg" target="_blank" data-position="top center">
+					<img src="images/tb2updated.jpg" alt="" />
+				</a>
+			</article>
+
+			<article class="thumbnail">
+				<a href="images/Data Feminism.jpeg" target="_blank">
+					<img src="images/tb3updated.jpg" alt="" />
+				</a>
+			</article>
+
+			<article class="thumbnail">
+				<a href="images/Experience Design.jpeg" target="_blank" data-position="top center">
+					<img src="images/tb4updated.jpg" alt="" />
+				</a>
+			</article>
+
+			<article class="thumbnail">
+				<a href="images/Human Centered Design.jpeg" target="_blank">
+					<img src="images/tb5updated.jpg" alt="" />
+				</a>
+			</article>
+
+			<article class="thumbnail">
+				<a href="images/Artificial Intelligence.jpeg" target="_blank">
+					<img src="images/tb6updated.jpg" alt="" />
+				</a>
+			</article>
+
+			<article class="thumbnail">
+				<a href="images/Architecture to UXD.jpeg" target="_blank">
+					<img src="images/tb7updated.jpg" alt="" />
+				</a>
+			</article>
+		</div>
+
+		<a href="#" class="fancy-button">Back to Top</a>
+	</section>
+
+	<div>
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy;All diagrams designed by Mihir Vishwasrao.</li>
+			</ul>
+		</footer>
+	</div>
+
+	<!-- Add more sections as needed -->
+
+	<script>
+		function nextSection() {
+			// Add logic to navigate to the next section
+			// For simplicity, you can scroll to the next section
+			const nextSection = document.querySelector('section:nth-child(2)');
+			nextSection.scrollIntoView({ behavior: 'smooth' });
+		}
+	</script>
+</body>
+
+</html>
